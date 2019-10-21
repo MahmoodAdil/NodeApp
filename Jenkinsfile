@@ -2,8 +2,11 @@ node {
     stage('Build') {
         echo 'Building....'
     }
-    stage('Test') {
-        echo 'Testing....'
+    stage('JunitTest') {
+        echo 'Unit Testing....'
+    }
+    stage('IntegrationTest') {
+        echo 'Integration Testing....'
     }
     stage('Deploy') {
         echo 'Deploying....'
